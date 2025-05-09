@@ -10,7 +10,7 @@ class MyGame(arcade.Window):
     def __init__(self):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
         
-        arcade.set_background_color(arcade.color.SKY_BLUE)
+        arcade.set_background_color(arcade.color.PURPLE_MOUNTAIN_MAJESTY)
         
         self.player = None
         self.wall = None
@@ -22,12 +22,12 @@ class MyGame(arcade.Window):
         self.player_list = arcade.SpriteList()
         self.wall_list = arcade.SpriteList()
 
-        self.player = arcade.SpriteSolidColor(50, 50, arcade.color.RED)
+        self.player = arcade.SpriteSolidColor(50, 50, arcade.color.BLUE_SAPPHIRE)
         self.player.center_x = 100
         self.player.center_y = 100
         self.player_list.append(self.player)
 
-        self.wall = arcade.SpriteSolidColor(200, 50, arcade.color.GRAY)
+        self.wall = arcade.SpriteSolidColor(200, 50, arcade.color.RED)
         self.wall.center_x = 400
         self.wall.center_y = 300
         self.wall_list.append(self.wall)
